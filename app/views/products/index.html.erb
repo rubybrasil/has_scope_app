@@ -1,0 +1,33 @@
+<% title "Products" %>
+
+<br/>
+<br/>
+<br/>
+<%= form_tag products_path, method: :get do %>
+  <%= label_tag :by_category, 'Por categoria' %>
+  <%= text_field_tag :by_category %>
+  &nbsp;
+  &nbsp;
+  &nbsp;
+  &nbsp;    
+  <%= label_tag :gt_price, 'Preço maior que' %>
+  <%= text_field_tag :gt_price, nil, size: 4 %>
+  &nbsp;
+  &nbsp;  
+  <%= label_tag :lt_price, 'Preço menor que' %>
+  <%= text_field_tag :lt_price, nil, size: 4 %>
+  &nbsp;
+  &nbsp;
+  &nbsp;
+  &nbsp;
+  <%= submit_tag 'Filtrar' %>
+<% end %>
+<br/>
+<br/>
+<% for product in @products %>
+  <%= div_for product do %>
+    <h3><%= product.name %> ( <%= product.price %>)</h3>
+    <p><%= product.category %></p>
+  <% end %>
+  <hr/>
+<% end %>

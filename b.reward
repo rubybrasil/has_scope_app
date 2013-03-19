@@ -1,0 +1,100 @@
+Order.last.confirm!
+kelly=User.by_login 'kellytutoria'
+kelly.password='123mudar'
+kelly.password_confirmation='123mudar'
+kelly.avatar = nil
+kelly.save
+kelly.login
+Date.today
+DateTime.today
+Time.now
+Time.now.to_s
+ File.utime('VERSION')
+647030[-1..3
+647030[-1..3]
+647030.to_s[-1..3]
+647030.to_s[0..1]
+647030.to_s[0..-3]
+647030.to_s[-1..-3]
+647030.to_s.reverse
+647030.to_s[-1..]
+647030.to_s[-1..-2]
+647030.to_s[-1..2]
+647030.to_s[-1..1]
+647030.to_s[-1..0]
+647030.to_s[-1]
+647030.to_s[1..-2]
+647030.to_s[1..-1]
+647030.to_s[0..-1]
+647030.to_s[-2..-1]
+647030.to_s[-3]
+647030.to_s[-3..1]
+647030.to_s[-3..-1]
+64798030.to_s[-3..-1]
+335583.to_s[-3..-1]
+647030.to_s.delete[-3..-1]
+647030.to_s.delete([-3..-1])
+647030.to_s.split
+647030.to_s
+result = 647030.to_s
+result.replace(result.[-3..-1], '')
+result.replace(result[-3..-1], '')
+result.gsub(result[-3..-1], '')
+reload
+video=Video.find 560
+video.duration
+video.decorator.display_string_duration
+video.total_minutes
+Configuration.all
+Configuration.all.map(&:value)
+Configuration.all.map(&:name)
+a = ->() { true && false }
+a.call
+a = ->(user) { user.newsletter_changed? && !user.newsletter }
+a.call(User.first)
+a.call(User.last)
+User
+require 'supermodel'
+class User < SuperModel::Base
+end
+u = User.new(name: 'fuu')
+u.name = 'lorem'
+u.save
+u
+u.changed
+u.update_attributes(name: 'lorem1')
+u.changed?
+u.name_changed
+u.name_changed?
+u.name_was
+u.name
+require 'rspec'
+user = mock
+user = mock()
+require 'rspec-mocl'
+require 'rspec-mock'
+hash={NAME: :name, EMAIL: :email}
+hash.each { |name| puts name }
+hash.to_a
+User.where(:email => 'forevertonny@gmail.com').count
+ton.authorizations
+ton.password = '123mudar'
+ton.password_cofirm = '123mudar'
+ton.password_cofirmation = '123mudar'
+ton.password_confirmation
+ton.password_confirmation = '123mudar'
+ton.admin
+ton.save
+Configuration[:mailchimp_list_id]
+Configuration[:mailchimp_list_id] = '9e9fd27805'
+Configuration[:mailchimp_list_id] = '149c39709e'
+Configuration[:mailchimp_api_key]
+Configuration[:mailchimp_api_key] = '2fb7d671f2e94c44c49d388d18599b77-us5'
+CatarseMailchimp
+CatarseMailchimp::API
+reload!
+ton=User.where(:email => 'forevertonny@gmail.com').first
+CatarseMailchimp::API.unsubscribe('forevertonny@gmail.com', '149c39709e')
+Configuration[:mailchimp_project_owners_list] = 'd272c46b24'
+Product.last.destroy
+exit
